@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bawei.shoppingcar_demo.MainActivity">
+
+    <ExpandableListView
+        android:id="@+id/elv"
+        android:layout_weight="1"
+        android:groupIndicator="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <CheckBox
+            android:text="全选"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/checkboxAll"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/heji"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/checkboxAll"
+            android:text="合计:￥0.00"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ff0000">
+
+            <TextView
+                android:id="@+id/jieSuan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:text="结算"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <TextView
+                android:paddingRight="30dp"
+                android:id="@+id/checkedNum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="(0)"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
